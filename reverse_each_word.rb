@@ -7,3 +7,11 @@ def reverse_each_word(sentence)
  flipped_words.join(" ")
  end
  
+def reverse_each_word(sentence)
+  words = sentence.split(/ /)
+  flipped_words = []
+  words.collect do |flip|
+   flipped_words << flip.reverse
+ end
+ flipped_words.join(" ")
+ end
